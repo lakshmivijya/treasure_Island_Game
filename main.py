@@ -20,17 +20,17 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************''')
 
 print("Welcome to Treasure Island /n Your mission is to find the treasure")
-direction = input('''You're at the cross-road. Where do you want to go? Type "left" or "right"''')
+direction = input('You\'re at the cross-road. Where do you want to go? Type "left" or "right"\n')
 dir = direction.lower()
 if dir == "right":
   print("Fall into a hole, Game Over!")
 else:
-  next_dec = input('You come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat, type "swim" to swim across')
+  next_dec = input('You come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat, type "swim" to swim across\n')
   next_decision = next_dec.lower()
   if next_decision == "swim":
     print("Attacked by trout, Game Over")
   else:
-    color = input("You arrived at the island unharmed. There is a house of three doors. One red, one yellow and one blue, which color do you choose?")
+    color = input("You arrived at the island unharmed. There is a house of three doors. One red, one yellow and one blue, which color do you choose?\n")
     color = color.lower()
     if color =="yellow":
       print("You Win")
